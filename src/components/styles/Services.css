@@ -1,0 +1,50 @@
+.services {
+    padding: 0 6rem 0 6rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.services-btn > Button {
+    color: #000000;
+    font-size: 1.1rem;
+    padding: 15px;
+    text-transform: inherit !important;
+    font-weight: 600;
+
+    margin-right: 10px;
+    border-width: 2px !important;
+    border-radius: 8px !important;
+}
+
+.services-btn > Button:hover {
+    color: #0a8d48;
+    border-width: 2px !important;
+}
+
+.services-buy, .services-sell, .services-rent {
+    display: flex;
+    align-items: center;
+}
+
+.services-buyInfo, .services-sellInfo, .services-rentInfo {
+    margin-left: 3rem;
+    text-align: justify;
+}
+
+.services-buy > img, .services-sell > img, .services-rent > img {
+    height: 90vh;
+    width: 30vw;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.services-buyInfo, .services-sellInfo, .services-rentInfo {
+    color: gray;
+    line-height: 2rem;
+}
+
+.services-buyInfo > Button:hover, .services-sellInfo > Button:hover, .services-rentInfo > Button:hover {
+    background-color: #0a8d48;
+}
+

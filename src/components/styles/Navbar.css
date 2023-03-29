@@ -1,0 +1,39 @@
+.navbar {
+    background-color: #f6f6f6 !important;
+    color: #282828 !important;
+    
+    width: 100% !important; 
+
+    opacity: 0.9 !important;
+}
+
+.navbar-logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+.navbar-options > Button {
+    font-weight: 800;
+}
+
+.navbar-options > Button:hover {
+    color: #0a8d48;
+    background-color: transparent;
+}
+
+.navbar-registerBtn:hover {
+    background-color: #0a8d48 !important;
+}
+
+.navbar-loginBtn:hover {
+    background-color: #0a8d48 !important;
+    outline: #0a8d48 !important;
+    color: white !important;
+}
