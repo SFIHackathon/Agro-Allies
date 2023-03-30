@@ -51,19 +51,21 @@ const Navbar = () => {
   return (
     <AppBar position="static" className="navbar" style={navbarStyle}>
       <Toolbar>
-        <IconButton
-          size="large"
-          edge="start"
-          color="inherit"
-          aris-aria-label="logo"
-          sx={{ mr: 2 }}
-        >
-          <img
-            src="https://png.pngtree.com/element_our/sm/20180411/sm_5ace062b08f53.jpg"
-            alt="agro-allies"
-            className="navbar-logo"
-          />
-        </IconButton>
+        <Link to='/'>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aris-aria-label="logo"
+            sx={{ mr: 2 }}
+          >
+            <img
+              src="https://png.pngtree.com/element_our/sm/20180411/sm_5ace062b08f53.jpg"
+              alt="agro-allies"
+              className="navbar-logo"
+            />
+          </IconButton>
+        </Link>
 
         <Typography
           variant="h5"
@@ -85,7 +87,9 @@ const Navbar = () => {
           </Link>
           <Button color="inherit" onClick={() => window.location.hash='services'}>Services</Button>
           <Button color="inherit">News & Media</Button>
-          <Button variant='outlined' className='navbar-loginBtn'>Login</Button>
+          <Link to='/form/login'>
+            <Button variant='outlined' className='navbar-loginBtn' sx={{fontWeight:800}}>Login</Button>
+          </Link>
           <div>
             <Button onClick={handleMenuClick} variant='contained' className='navbar-registerBtn'>Register</Button>
             <Menu
@@ -94,8 +98,12 @@ const Navbar = () => {
               onClose={handleMenuClose}
               sx={{ mt : 1, zIndex: 101 }}
             >
-              <MenuItem onClick={handleMenuClose}>As Seller</MenuItem>
-              <MenuItem onClick={handleMenuClose}>As Buyer</MenuItem>
+              <Link to='/form/registerSeller'>
+                <MenuItem onClick={handleMenuClose} sx={{ textDecoration:'none' }}>As Seller</MenuItem>
+              </Link>
+              <Link to='/form/registerBuyer'>
+                <MenuItem onClick={handleMenuClose} sx={{ textDecoration:'none' }}>As Buyer</MenuItem>
+              </Link>
             </Menu>
           </div>
         </Stack>
